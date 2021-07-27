@@ -3,19 +3,17 @@ import PropTypes from 'prop-types';
 
 const ColorDisplay = ({ backgroundColor }) => {
   return (
-    <div
-      style={{
+    <img src='src/bubble.png'
+    style={{
         backgroundColor,
-        width: '400px',
-        height: '400px',
-      }}
-    
-    ></div>
+        margin: '0',
+        padding: '0',
+    }} />
   );
 };
 
 ColorDisplay.propTypes = {
-  backgroundColor: PropTypes.string.isRequired,
+    backgroundColor: PropTypes.string.isRequired,
 };
 
 export default ColorDisplay;
