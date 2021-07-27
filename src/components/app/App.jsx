@@ -1,5 +1,13 @@
 import React from 'react';
+import { RandomColor } from '../random-color/RandomColor';
 
 export default function App() {
-  return <h1>Hello World</h1>;
+  
+  componentDidMount() {
+    this.interval = setInterval(() => this.setState({ time: Date.now() }), 1000);
+  }
+  
+  componentWillUnmount() {
+    clearInterval(this.interval());
+  }
 }
