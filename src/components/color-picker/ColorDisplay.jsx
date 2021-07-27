@@ -1,20 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 
 const ColorDisplay = ({ backgroundColor }) => {
-    return (
-        <div
-            style={{
-                backgroundColor,
-                width: '400px',
-                height: '400px',
-            }}
-        ></div>
-    );
+  return (
+    <div
+      style={{
+        backgroundColor,
+        width: '400px',
+        height: '400px',
+      }}
+    
+    ></div>
+  );
 };
 
 ColorDisplay.propTypes = {
-    backgroundColor: PropTypes.string.isRequired,
+  backgroundColor: PropTypes.string.isRequired,
 };
 
 export default ColorDisplay;
